@@ -1,0 +1,188 @@
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(137, 199, 90);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+ul {
+  padding: 0;
+}
+nav li {
+  list-style: none;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px grey;
+  text-align: center;
+  border: 2px solid rgb(91, 157, 91);
+  border-radius: 10px;
+  background: rgb(170, 211, 126);
+  padding: 10px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background: rgb(206, 206, 206);
+  text-align: left;
+  border: none;
+  margin-bottom: 5px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+}
+ul.date,
+ul.dateEvent {
+  list-style: none;
+  margin: 5px;
+}
+#vision p {
+  padding: 5px;
+  font-size: 1.5rem;
+}
+#hidden {
+  display: none;
+  margin: 0;
+}
+#specials,
+#events,
+#news {
+  border: 5px solid white;
+  margin: 0;
+  padding: 5px;
+  margin-bottom: 10px;
+  background: white;
+}
+button i {
+  float: right;
+}
+.date li {
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+}
+footer > * {
+  box-sizing: border-box;
+  width: 50%;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+}
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  padding-left: 5px;
+  padding-top: 5px;
+  color: white;
+}
+.name {
+  width: 80%;
+}
+.phone {
+  color: black;
+}
+a {
+  color: white;
+}
+footer li {
+  float: right;
+  padding: 5px;
+}
+
+@media screen and (min-width: 426px) {
+  li {
+    font-size: 1.4rem;
+  }
+  #main p {
+    margin: 5px;
+    font-size: 1.7rem;
+    margin-top: 5rem;
+  }
+  #main {
+    background-image: url(images/background_main.jpg) !important;
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    border: 10px solid white;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 10px;
+    background: white;
+  }
+  #hidden {
+    display: block;
+  }
+  #hidden img {
+    height: 180px;
+    width: 200px;
+  }
+  button {
+    font-size: 1.5rem;
+  }
+  #tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #specials,
+  #events {
+    box-sizing: border-box;
+    width: 50%;
+  }
+  #news {
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+  nav ul > li {
+    flex-grow: 1;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+  i {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  #main {
+    background-image: url(images/background_main.jpg) !important;
+    height: 250px;
+  }
+  #hidden img {
+    height: 250px;
+    width: 275px;
+  }
+  #tablet {
+    flex-wrap: nowrap;
+  }
+  #specials,
+  #events,
+  #news {
+    width: 33.3%;
+  }
+  #main p {
+    font-size: 2.5rem;
+    margin-top: 8rem;
+  }
+  button {
+    font-size: 2rem;
+  }
+  nav li {
+    font-size: 1.5rem;
+  }
+}
